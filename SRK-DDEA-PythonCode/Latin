@@ -1,6 +1,6 @@
 % Latin hypercube sampling
-% N             -No. of Decision Variables
-% D             -The size of the sample data
+% N             -The size of the sample data
+% D             -No. of Decision Variables
  
     %%%%    Authors:    Pengfei Huang, Handing Wang, Wenping Ma
     %%%%    Xidian University, China
