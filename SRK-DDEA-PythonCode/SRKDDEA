@@ -52,7 +52,6 @@ if __name__ == '__main__':
         ga.crossover(ga.pc)
         ga.mutation(ga.pm)
         ga.pop = np.unique(ga.pop, axis=0)
-        true = fun(ga.pop)
         for j in range(len(model)):
             temp = model[j].predict(ga.pop)
             if j == 0:
@@ -63,4 +62,5 @@ if __name__ == '__main__':
         ga.selection(fit_value)
     optimum = ga.pop[-1]
     endtime = time.process_time()
+    print('Optimal solution :', optimum)
     print('Execution Time :', endtime - starttime)
