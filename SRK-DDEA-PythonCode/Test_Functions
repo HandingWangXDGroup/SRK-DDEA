@@ -71,7 +71,7 @@ def ackley(x):  # x:[-32.768,32.768]
         sum[i] = -20 * np.exp(-0.2 * np.sqrt(atemp1 / dimension)) - np.exp(atemp2 / dimension) + 20 + np.exp(1)
     sum = np.array(sum)
     return sum
-def griewank(x):  # x;[-600,600]
+def griewank(x):  # x:[-600,600]
     x = np.array(x)
     if len(x.shape) < 2:
         x = x[np.newaxis, :]
