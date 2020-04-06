@@ -28,7 +28,7 @@ import Test_Functions as fun
 from GA import GA
 
 if __name__ == '__main__':
-    starttime = time.process_time()
+    starttime = time.perf_counter()
     dimension = 10
     fun = fun.ellipsoid
     lower_bound = -5.12
@@ -61,6 +61,6 @@ if __name__ == '__main__':
         fit_value = fit_value.reshape((len(ga.pop), len(model)))
         ga.selection(fit_value)
     optimum = ga.pop[-1]
-    endtime = time.process_time()
+    endtime = time.perf_counter()
     print('Optimal solution :', optimum)
     print('Execution Time :', endtime - starttime)
